@@ -26,12 +26,12 @@ do
 	(say -v Vicki $line &);
 	if [[ $line != '.' ]] 
 	    then 
-	        echo $line | grep 'Aperture Science' && show_file ~/aperture_logo.txt;	        
-		echo $line | grep -i 'black mesa' && show_file ~/black_mesa_logo.txt;
-		echo $line | grep -i 'cake' && show_file ~/cake.txt
-		echo $line | grep -i 'heart' && show_file ~/heart.txt
+	        echo $line | grep 'Aperture Science' && show_file ./aperture_logo.txt;	        
+		echo $line | grep -i 'black mesa' && show_file ./black_mesa_logo.txt;
+		echo $line | grep -i 'cake' && show_file ./cake.txt
+		echo $line | grep -i 'heart' && show_file ./heart.txt
  	        slow_type "$line";
 	    else
 	        sleep 1;
 	    fi;
-done < ~/still_alive.txt 
+done < ./still_alive.txt 
