@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 slow_type() {
     echo $1 | pv -qL 10;
@@ -24,7 +24,7 @@ echo ""
 while read line; 
 do 
 	(say -v Vicki $line &);
-	if [[ $line != '.' ]] 
+	if [[ $line != . ]]
 	    then 
 	        echo $line | grep 'Aperture Science' && show_file ./aperture_logo.txt;	        
 		echo $line | grep -i 'black mesa' && show_file ./black_mesa_logo.txt;
