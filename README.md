@@ -1,10 +1,10 @@
-##Dependencies
+## Dependencies
 
 Please download all the dependencies:
 
 https://github.com/jhechavarria/say.sh
 
-##Usage:
+## Usage:
 
 `git clone https://github.com/joeheyming/still_alive.git`
 
